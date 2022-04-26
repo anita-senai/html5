@@ -6,49 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
 </head>
+<style>
+
+td#title { text-align: left; font-size: 25px; padding: 25px 25px 25px 70px;}
+
+button { background-color: green; padding: 10px 50px; margin: 15px; border-radius: 5px;}
+
+table{width: 80%; margin: auto; border: 10px solid red; padding: 40px;}
+
+input[type=text], select, input[type=date] {padding: 5px 15px; margin: 8px 0; display: inline-block; border: 1px solid gray; border-radius: 5px; box-sizing: border-box; box-shadow: 2px 2px 5px lightblue;}
+
+td#text {width: 15%;  text-align: right; padding: 5px;}
+</style>
 <body>
   
-    <table>
+    <table >
         <tr>
-            <td> E-mail *</td>
-            <td> <input type="text" name="" id=""></td>
-            <td> Crie uma senha *</td>
-            <td> <input type="text" name="" id=""></td>
+            <td id="text"> E-mail *</td>
+            <td id="entrada"> <input type="text" name="" id="" size="40%"></td>
+            <td id="text"> Crie uma senha *</td>
+            <td id="entrada"> <input type="text" name="" id="" size="40%"></td>
         </tr>
         <tr>
-            <td> Repita o e-mail *</td>
-            <td> <input type="text" name="" id=""></td>
-            <td> Repita a senha *</td>
-            <td> <input type="text" name="" id=""></td>
+            <td id="text"> Repita o e-mail *</td>
+            <td id="entrada"> <input type="text" name="" id="" size="40%"></td>
+            <td id="text"> Repita a senha *</td>
+            <td id="entrada"> <input type="text" name="" id="" size="40%"></td>
         </tr>
         <tr>
-            <td colspan="2"> Dados cadastrais </td>
+            <td colspan="2" id="title"> Dados cadastrais </td>
             
-            <td colspan="2"> Endereço de entrega</td>
+            <td colspan="2" id="title"> Endereço de entrega</td>
             
         </tr>
         <tr>
             <td> </td>
             <td> <input type="radio" name="fop" id=""> Pessoa física 
                 <input type="radio" name="fop" id=""> Pessoa jurídica</td>
-            <td> CEP </td>
-            <td> <input type="text" name="" id=""></td>
+            <td id="text" > CEP </td>
+            <td id="entrada"> <input type="text" name="" id="" size="20%"></td>
         </tr>
         <tr>
-            <td> Nome *</td>
-            <td> <input type="text" name="" id=""></td>
-            <td> Rua </td>
-            <td> <input type="text" name="" id=""></td>
+            <td id="text" > Nome *</td>
+            <td id="entrada"> <input type="text" name="" id="" size="40%"></td>
+            <td id="text"> Rua </td>
+            <td id="entrada"> <input type="text" name="" id="" size="40%"></td>
         </tr>
         <tr>
-            <td> Sobrenome *</td>
-            <td> <input type="text" name="" id=""></td>
-            <td> Número </td>
-            <td> <input type="text" name="" id=""></td>
+            <td id="text"> Sobrenome *</td>
+            <td id="entrada"> <input type="text" name="" id="" size="40%"></td>
+            <td id="text"> Número </td>
+            <td id="entrada"> <input type="text" name="" id="" size="15%"></td>
         </tr>
         <tr>
-            <td> Sexo *</td>
-            <td> <select name="" id="" >
+            <td id="text"> Sexo *</td>
+            <td> <select name="" id="" style="width: 50%;">
                 <option value=""> Selecione</option>
                 <option value=""> Masculino</option>
                 <option value=""> Feminino</option>
@@ -57,38 +69,38 @@
             <td> <input type="checkbox" name="" id=""> Sem  número</td>
         </tr>
         <tr>
-            <td> CPF *</td>
-            <td> <input type="text" name="" id=""></td>
-            <td> Complemento</td>
-            <td> <input type="text" name="" id=""></td>
+            <td id="text"> CPF *</td>
+            <td id="entrada"> <input type="text" name="" id=""></td>
+            <td id="text"> Complemento</td>
+            <td id="entrada"> <input type="text" name="" id="" size="35%"></td>
         </tr>
         <tr>
-            <td> Telefone *</td>
-            <td> <input type="text" name="" id=""></td>
-            <td> Referência</td>
-            <td> <input type="text" name="" id=""></td>
+            <td id="text"> Telefone *</td>
+            <td id="entrada"> <input type="text" name="" id=""></td>
+            <td id="text"> Referência</td>
+            <td id="entrada"> <input type="text" name="" id="" size="40%"></td>
         </tr>
         <tr>
-            <td> Celular *</td>
-            <td> <input type="text" name="" id=""></td>
-            <td> Bairro </td>
-            <td> <input type="text" name="" id=""></td>
+            <td id="text"> Celular *</td>
+            <td id="entrada"> <input type="text" name="" id=""></td>
+            <td id="text"> Bairro </td>
+            <td id="entrada"> <input type="text" name="" id="" size="40%"></td>
         </tr>
         <tr>
-            <td> Nascimento *</td>
-            <td> <input type="text" name="" id=""></td>
-            <td> Cidade</td>
-            <td> <input type="text" name="" id=""></td>
+            <td id="text"> Nascimento *</td>
+            <td id="entrada"> <input type="date" name="" id=""></td>
+            <td id="text"> Cidade</td>
+            <td id="entrada"> <input type="text" name="" id="" size="40%"></td>
         </tr>
         <tr>
             <td> </td>
             <td> <input type="checkbox" name="" id=""> Receber ofertas e novidades por e-mail </td>
-            <td> Estado</td>
-            <td> <input type="text" name="" id=""></td>
+            <td id="text"> Estado</td>
+            <td id="entrada"> <input type="text" name="" id="" size="5%"></td>
         </tr>
         <tr>
             <td>  </td>
-            <td> <input type="submit"> </td>
+            <td> <button> <b> CADASTRAR > </b></button></td>
             <td> </td>
             <td> </td>
         </tr>
